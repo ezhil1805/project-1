@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Section 1: Student Form Table -->
+    <div class="student-form">
+        <h2>Student Form</h2>
+        <button id="createProfileBtn">Create New Profile</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Dept</th>
+                    <th>Reg No</th>
+                    <th>Phone No</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Table content will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Section 2: Profile Creation Form -->
+    <div class="profile-form" style="display: none;">
+        <h2>Create New Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="regno">Reg No*</label>
+            <input type="text" id="regno" name="regno" required><br><br>
+
+            <label for="dept">Dept*</label>
+            <input type="text" id="dept" name="dept" required><br><br>
+
+            <label for="section">Section*</label>
+            <input type="text" id="section" name="section" required><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
